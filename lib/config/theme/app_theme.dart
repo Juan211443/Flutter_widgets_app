@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 const colorList = <Color>[
+  Colors.cyan,
   Colors.amber,
   Colors.blue,
   Colors.green,
@@ -15,7 +16,7 @@ class AppTheme {
   AppTheme({this.selectedColor = 0})
     : assert(
         selectedColor >= 0 || selectedColor <= colorList.length,
-        'Select a color between 0 - 5',
+        'Select a color between 0 - 6',
       );
 
   ThemeData getTheme() => ThemeData(
