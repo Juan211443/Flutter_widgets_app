@@ -46,7 +46,8 @@ class _ControllerProgressIndicator extends StatelessWidget {
   Widget build(BuildContext context) {
     return StreamBuilder(
       stream: Stream.periodic(const Duration(milliseconds: 300), (value) {
-        return (value * 2) / 100;
+        final progress = (value % 51) / 50;
+        return progress;
       }).takeWhile((value) => value < 100),
       builder: (context, snapshot) {
         final progressValue = snapshot.data ?? 0;
