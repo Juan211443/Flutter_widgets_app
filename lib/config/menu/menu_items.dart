@@ -57,4 +57,22 @@ const appMenuItems = <MenuItems>[
     link: '/app_tutorial',
     icon: Icons.accessible_rounded,
   ),
+  MenuItems(
+    title: 'Inifinite scroll and pull',
+    subTitle: 'Infinite list and pull to refresh',
+    link: '/infinite_scroll',
+    icon: Icons.list_alt_rounded,
+  ),
+  MenuItems(
+    title: 'Counter with Riverpol',
+    subTitle: 'Using riverpol',
+    link: '/counter',
+    icon: Icons.plus_one,
+  ),
+  MenuItems(
+    title: 'Change theme',
+    subTitle: 'change application theme',
+    link: '/theme_changer',
+    icon: Icons.color_lens,
+  ),
 ];
